@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>U-OV verhalen website</title>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+
+    <!-- Typografie -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATIE BALK -->
+        <nav class="hoofdnav">
+            <ul>
+                <li><a href="index.html"> <img class="logo" src="img/uov-wit.png" alt="logoUov"></a></li>
+                <li><a href="download.html"> <img class="icon" src="img/download.png" alt="download"></a></li>
+                <li><a href="favorieten.html"> <img class="icon" src="img/heart.png" alt="favorieten"></a></li>
+                <li><a href="search.html"> <img class="icon" src="img/search.png" alt="search"></a></li>
+            </ul>
+        </nav>
+
+        <!-- Slogan -->
+        <h1>Jouw co-piloot van deur tot deur</h1>
+    </header>
+
+
+
+    <!--FILTER-->
+    <section class="subnav">
+
+        <!-- filter icon small -->
+        <a class="filtericon"> <img class="filtericon" src="img/filter.png" alt="filter"></a>
+
+
+        <!-- filters achter filter icon met 'click' -->
+        <form class="filteropen" action="index.html">
+
+            <!-- Filter genre -->
+            <fieldset class="genre">
+                <!-- Gebruik p inplaats van legend door styling, overlegd met Laura -->
+                <p>Genre</p>
+                <label>
+                    <input type="checkbox" name="fantasy" value="Fantasy">
+                    Fantasy</label>
+
+                <label>
+                    <input type="checkbox">
+                    Horor</label>
+
+                <label>
+                    <input type="checkbox">
+                    Misdaad</label>
+
+                <label>
+                    <input type="checkbox">
+                    Roman</label>
+
+                <label>
+                    <input type="checkbox">
+                    Actie </label>
+            </fieldset>
+
+            <!-- Filter leesduur -->
+            <fieldset class="leesduur">
+                <!-- Gebruik p inplaats van legend door styling, overlegd met Laura -->
+                <p>Leesduur</p>
+                <input type="range" min="1" max="5" value="1" name="leesduur" />
+                <p class="linkstekst">Kort</p>
+                <p class="rechtstekst">Lang</p>
+            </fieldset>
+
+            <fieldset class="watvindenanderen">
+                <!-- Gebruik p inplaats van legend door styling -->
+                <p>Wat vinden anderen?</p>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </fieldset>
+        </form>
+
+
+        <!-- filters wanneer scherm breder is dan 768px -->
+        <form class="filteropgeklapt" action="index.html">
+
+            <!-- Filter genre -->
+            <fieldset class="genre">
+                <!-- Gebruik p inplaats van legend door styling, overlegd met Laura -->
+                <p>Genre</p>
+                <label>
+                    <input type="checkbox" name="fantasy" value="Fantasy">
+                    Fantasy</label>
+
+                <label>
+                    <input type="checkbox">
+                    Horor</label>
+
+                <label>
+                    <input type="checkbox">
+                    Misdaad</label>
+
+                <label>
+                    <input type="checkbox">
+                    Roman</label>
+
+                <label>
+                    <input type="checkbox">
+                    Actie </label>
+            </fieldset>
+
+            <!-- Filter leesduur -->
+            <fieldset class="leesduur">
+                <!-- Gebruik p inplaats van legend door styling, overlegd met Laura -->
+                <p>Leesduur</p>
+                <input type="range" min="1" max="5" value="1" name="leesduur" />
+                <p class="linkstekst">Kort</p>
+                <p class="rechtstekst">Lang</p>
+            </fieldset>
+
+            <fieldset class="watvindenanderen">
+                <!-- Gebruik p inplaats van legend door styling, overlegd met Laura -->
+                <p>Wat vinden anderen?</p>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </fieldset>
+        </form>
+        <!-- Filter knop -->
+        <button type="button">Filter</button>
+    </section>
+
+
+
+    <!-- VERHALEN CONTENT -->
+    <main>
+        <!-- Dit verhaal linkt naar detailpagina -->
+        <a class="verhaal" href="detailpagina.html">
+            <article id="verhaalvandeweek">
+                <img class="verhaalvandeweekimg" src="img/verhaalvandeweek1.png" alt="droom">
+                <img class="iconvandeweek" src="img/icon-verhaalvandeweek.png" alt="vandeweek">
+                <h3>Droom</h3>
+                <p class="gepost">Gepost op 2 febr. 2011</p>
+                <p>Slierten mist zwerven rond mijn benen.
+                    Net zat ik nog in Bus 21. Het was warm,
+                    zweet parelde langs mijn slapen, mijn
+                    zoon sliep. Nu loop ik over een smal pad
+                    langs eindeloos diepe bouwputten[...]</p>
+                <p>30x gelezen</p>
+                <p>9x geliked</p>
+            </article>
+        </a>
+
+        <article class="andereverhalen">
+            <img src="img/verhaalverrassing.png" alt="droom">
+            <h3>Verrassing</h3>
+            <p class="gepost">Gepost op 12 juli 2011</p>
+            <p>>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’–
+                ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je
+                lopen?’[...]</p>
+            <p>20x gelezen</p>
+            <p>7x geliked</p>
+        </article>
+
+        <article class="andereverhalen">
+            <img src="img/verhaalaltheimer.png" alt="droom">
+            <h3>Altheimer</h3>
+            <p class="gepost">Gepost op 4 febr. 2011</p>
+            <p>Rond 12.00 uur stap ik uit de bus, die er letterlijk acht uur over heeft gedaan. Op het plein van
+                Amsterdam Centraal. De regen geselt letterlijk mijn gezicht. Ik duw het wagentje voort[...]</p>
+            <p>18x gelezen</p>
+            <p>4x geliked</p>
+        </article>
+
+        <article class="andereverhalen">
+            <img src="img/verhaal2.jpg" alt="droom">
+            <h3>Beroemd</h3>
+            <p class="gepost">Gepost op 11 juli 2011</p>
+            <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait
+                joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’[...]</p>
+            <p>20x gelezen</p>
+            <p>2x geliked</p>
+        </article>
+
+        <article class="andereverhalen">
+            <img src="img/verhaal3.jpg" alt="droom">
+            <h3>Steenkolenfrans</h3>
+            <p class="gepost">Gepost op 4 juli 2011</p>
+            <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au
+                derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur
+                Exercices [...]</p>
+            <p>10x gelezen</p>
+            <p>2x geliked</p>
+        </article>
+
+        <article class="andereverhalen">
+            <img src="img/verhaal4.jpg" alt="droom">
+            <h3>Martin Bril</h3>
+            <p class="gepost">Gepost op 1 juli 2011</p>
+            <p>Centraal Station. Iedereen gaat er naartoe, niemand moet er zijn. Behalve om verder te reizen. Ik stap
+                uit de bus, lijn 21. Van Geuzenveld naar Centraal Station. Mijn zoon slaapt in zijn kinderwagen.[...]
+            </p>
+            <p>22x gelezen</p>
+            <p>19x geliked</p>
+        </article>
+
+        <article class="andereverhalen">
+            <img src="img/verhaal5.jpg" alt="droom">
+            <h3>Het gebrek</h3>
+            <p class="gepost">Gepost op 29 juni 2011</p>
+            <p>De bus uit. Mijn zoon tukt in zijn kinderkoets. Eindelijk. Ik loop over het plein. Een gierende wind en
+                een striemende miezerregen geselen mijn gezicht. De mensen kijken voor zich uit, ieder voor zich. Ik ben
+                op weg richting de bibliotheek om Stijloefeningen te lenen van hoe heet die schijver, iets met een Q.
+                Welk [...]</p>
+            <p>18x gelezen</p>
+            <p>7x geliked</p>
+        </article>
+
+        <article class="andereverhalen">
+            <img src="img/verhaal6.jpg" alt="droom">
+            <h3>Vergezocht</h3>
+            <p class="gepost">Gepost op 27 juni 2011</p>
+            <p>Het was in de omstreken van een gure februaridag rond het middaguur. Mijn zoon lag in zijn kinderwagen te
+                slapen als een oude jamaicaan die teveel Rum achter de ontbrekende kiezen heeft[...]</p>
+            <p>22x gelezen</p>
+            <p>19x geliked</p>
+        </article>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>@VeerleBeeker</p>
+        <p>Jouw co-piloot van deur tot deur</p>
+    </footer>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

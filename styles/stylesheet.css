@@ -1,0 +1,465 @@
+/* HEADER */
+header {
+    background-color: #655C54;
+    /* header sticky */
+    position: sticky;
+    top: 0em;
+    /* header valt over grid heen */
+    z-index: 3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding 0;
+    margin: 0;
+}
+
+/* main navigatie */
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0em;
+    margin: 0em;
+}
+
+li {
+    list-style: none;
+    padding: 0em;
+}
+
+img.icon {
+    padding: 0.5em;
+    height: 3em;
+    width: auto;
+
+    /* Deze code is correct, maar werkt op 1 of andere manier niet */
+    transition-timing-function: ease-in;
+    transition: 0.6s;
+    /* BRON: w3schools, 2019. geraadpleegd op 20/11/2019 van https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+}
+
+img.logo {
+    padding: 0.5em;
+    height: 3em;
+    width: auto;
+
+    /* Deze code is correct, maar werkt op 1 of andere manier niet */
+    transition-timing-function: ease-in;
+    transition: 0.6s;
+    /* BRON: w3schools, 2019. geraadpleegd op 20/11/2019 van https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+}
+
+/* Slogan website */
+h1 {
+    color: #FFFFFF;
+    padding: 0.8em;
+    margin: 0em;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: #655C54;
+}
+
+
+
+
+/* FILTER */
+.subnav {
+    padding: 0em 0.5em;
+    background-color: #F2DA64;
+}
+
+
+
+/* FILTER SMALL */
+.filtericon {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #F2DA64;
+}
+
+.filtericon img {
+    height: 6em;
+    display: none;
+}
+
+/* Filter is met deze breedte van het scherm alleen een icon */
+@media screen and (max-width:768px) {
+    .filtericon img {
+        display: block;
+    }
+}
+
+/* BRON: w3schools, 2019. geraadpleegd op 25/11/2019 van https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
+
+
+
+/* FILTER BREED */
+.filteropgeklapt {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset > h2 {
+    max-width: 10ch;
+}
+
+fieldset > p {
+    margin: 0em;
+    font-size: 160%;
+    padding: 0em 0em 0em 0em;
+    text-align: left;
+    max-width: 10ch;
+}
+
+/* Test rechts bij slider leesduur */
+.rechtstekst {
+    float: right;
+    font-size: 1em;
+}
+
+/* Test links bij slider leesduur */
+.linkstekst {
+    font-size: 1em;
+}
+
+fieldset.genre {
+    display: flex;
+    flex-direction: row;
+    min-width: 5em;
+}
+
+fieldset.genre > label:hover {
+    color: #DF812F;
+}
+
+/*Leesduur slider*/
+/*Silder design*/
+[type="range"] {
+    /* zorgt voor dat je eigen design kan toevoegen */
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #DFDFDF;
+}
+
+/*cirkel die verplaats kan worden binnen slider*/
+[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: #DF812F;
+}
+
+/* BRON: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+
+/* Wat vinden anderen? */
+fieldset.watvindenanderen {
+    /* Dit bepaald de direction van de sterrren */
+    unicode-bidi: bidi-override;
+}
+
+fieldset.watvindenanderen > span {
+    display: inline-block;
+    /* display: flex;*/
+    /* flex-direction: row-reverse;*/
+    /* justify-content: flex-end;*/
+    position: relative;
+    direction: rtl;
+    color: #DF812F;
+}
+
+/* \2605 staat voor een solid star */
+/* Hier worden de sterren met hover gevuld */
+fieldset > span:hover::before,
+fieldset > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+/* BRON: C. Coyier, 2019. geraadpleegd op 17/12/2019 van https://css-tricks.com/star-ratings/ */
+
+
+/* Filter is vanaf deze breedte een brede filter */
+@media screen and (max-width:768px) {
+    .filteropgeklapt {
+        display: none;
+    }
+}
+/* BRON: w3schools, 2019. geraadpleegd op 25/11/2019 van https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
+
+form {
+    background-color: #F2DA64;
+}
+
+fieldset {
+    border-radius: 0.6em;
+    border-style: none;
+
+    padding: 0.6em;
+    margin: 0.5em;
+    background-color: #FFFFFF;
+    max-width: 20em;
+}  
+
+
+
+/* OPEN FILTER MET KLIK KNOP (SMALL) */
+.filteropen {
+    display: flex;
+    justify-content: center;
+    
+/*    vertical-align: center;*/
+/*    align-content: center;*/
+/*    align-items: center;*/
+}
+
+.filteropen>fieldset {
+    max-width: 9em;
+/*    vertical-align: center;*/
+/*    align-content: center;*/
+/*    align-items: center;*/ 
+}
+
+
+/*FILTER BUTTON*/
+section > button {
+    border-radius: 0.7em;
+    border-style: none;
+    height: 2.5em;
+    width: 4em;
+    font-size: 1em;
+    margin: auto;
+    color: #FFFFFF;
+    background-color: #DF812F;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* MAIN */
+main {
+    /* Grid op overzichtspagina */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30em);
+    justify-content: center;
+}
+
+/* Breakpoints voor het grid */
+@media screen and (min-width:300px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* VERHALEN */
+.verhaal {
+    text-decoration: none;
+}
+
+.gepost {
+    font-style: italic;
+}
+
+article {
+    border-radius: 1.5em;
+    margin: 1em 1em 1em 1em;
+    padding-bottom: 0.5em;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 15px #bcbcbb;
+
+    /* positie van sticker: 'verhaal van de week' */
+    position: relative;
+}
+
+
+
+/* UITLICHTEN VERHAAL VAN DE WEEK */
+#verhaalvandeweek:hover {
+    opacity: 90%;
+    background-color: #FFE0FA;
+}
+
+/* ANDERE VERHALEN HOVER */
+.andereverhalen:hover {
+    opacity: 90%;
+    background-color: #E3E3E3;
+}
+
+
+article h3 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5em;
+    color: black;
+}
+
+article h3:hover {
+    color: #EEDB76;
+}
+
+article p {
+    display: flex;
+    justify-content: flex-start;
+    color: #655C54;
+    margin: 0.5em;
+}
+
+article:visited {
+    text-decoration: none;
+    color: #B2B2B2;
+}
+
+article img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 1.5em 1.5em 0em 0em;
+
+    object-fit: cover;
+    /* BRON: Jen Simmons, 2019. geraadpleegd op 27/11/2019 van https://www.youtube.com/watch?v=jBwBACbRuGY */
+}
+
+/* positie van sticker: 'verhaal van de week' */
+.iconvandeweek {
+    position: absolute;
+    left: -0.04em;
+    top: -0.05em;
+
+    width: 25%;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #655C54;
+    padding: 0.2em;
+    margin: 0em;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 0em;
+    margin: 0.5em;
+}
+
+
+
+
+
+/*DETAILPAGINA*/
+
+body.detailpagina {
+    background-color: #1D1D1E;
+}
+
+main.detailpagina {
+    background-color: black;
+    display: block;
+    justify-content: center;
+}
+
+
+/* positie van informatie verhaal */
+.informatieverhaal {
+    position: absolute;
+    z-index: 2;
+    right: -0.04em;
+    top: 8em;
+    display: block;
+    width: 11em;
+    border-radius: 1.5em;
+    margin: 1em 1em 1em 1em;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+img.detailpagina {
+    width: 100%;
+    position: relative;
+}
+
+/* sterren informatie verhaal */
+section > span {
+    color: #DF812F;
+}
+
+/* Informatie verhaal tekst goed uitgelijnt */
+section > h2 {
+    margin: 0.2em 0em;
+}
+
+section > p.gepost {
+    margin: 0.2em 0em 01em 0em;
+}
+
+section > p.gelezengeliked {
+    margin: 0.2em 0em;
+}
+
+
+
+
+/* Tekst bij afbeeldingen afbeelding */
+section.tekst {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3.eerstetekst {
+    position: absolute;
+    z-index: 2;
+    bottom: 2em;
+    vertical-align: center;
+
+    text-align: center;
+    max-width: 40ch;
+
+    color: white;
+}
+
+h3.tweedetekst {
+    position: absolute;
+    z-index: 2;
+    bottom: 0.2em;
+    vertical-align: center;
+
+    text-align: center;
+    max-width: 40ch;
+
+    color: white;
+}
+
+h3.derdetekst {
+    position: absolute;
+    z-index: 2;
+    bottom: 4.5em;
+    vertical-align: center;
+
+    text-align: center;
+    max-width: 40ch;
+
+    color: white;
+}
